@@ -23,7 +23,7 @@
 	</kinematics>
 <link>
 	<name>basePan</name>
-	<deviceName>GroguArm</deviceName>
+	<deviceName>AdamArmESP</deviceName>
 	<type>udp-7dof-float</type>
 	<index>0</index>
 	<scale>1.0</scale>
@@ -79,7 +79,7 @@
 </link>
 <link>
 	<name>baseTilt</name>
-	<deviceName>GroguArm</deviceName>
+	<deviceName>AdamArmESP</deviceName>
 	<type>udp-7dof-float</type>
 	<index>1</index>
 	<scale>1.0</scale>
@@ -135,7 +135,7 @@
 </link>
 <link>
 	<name>elbow</name>
-	<deviceName>GroguArm</deviceName>
+	<deviceName>AdamArmESP</deviceName>
 	<type>udp-7dof-float</type>
 	<index>2</index>
 	<scale>1.0</scale>
@@ -191,7 +191,7 @@
 </link>
 <link>
 	<name>wrist1</name>
-	<deviceName>GroguArm</deviceName>
+	<deviceName>AdamArmESP</deviceName>
 	<type>udp-7dof-float</type>
 	<index>3</index>
 	<scale>1.0</scale>
@@ -247,7 +247,7 @@
 </link>
 <link>
 	<name>wrist2</name>
-	<deviceName>GroguArm</deviceName>
+	<deviceName>AdamArmESP</deviceName>
 	<type>udp-7dof-float</type>
 	<index>4</index>
 	<scale>1.0</scale>
@@ -303,7 +303,7 @@
 </link>
 <link>
 	<name>wrist3</name>
-	<deviceName>GroguArm</deviceName>
+	<deviceName>AdamArmESP</deviceName>
 	<type>udp-7dof-float</type>
 	<index>5</index>
 	<scale>1.0</scale>
@@ -354,149 +354,6 @@
 		<Theta>90.0</Theta>
 		<Radius>0.0</Radius>
 		<Alpha>0.0</Alpha>
-
-		<mobilebase>
-	<cadEngine>
-		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
-		<file>mouthcad.groovy</file>
-	</cadEngine>
-	<driveEngine>
-		<git>https://github.com/madhephaestus/6dofServoArm.git</git>
-		<file>walking.groovy</file>
-	</driveEngine>
-
-<name>head</name>
-<appendage>
-
-<name>mouth</name>
-	<cadEngine>
-		<git>https://github.com/Halloween2020TheChild/GroguMechanicsCad.git</git>
-		<file>mouthcad.groovy</file>
-	</cadEngine>
-	<kinematics>
-		<git>https://github.com/madhephaestus/6dofServoArm.git</git>
-		<file>DefaultDhSolver.groovy</file>
-	</kinematics>
-<link>
-	<name>tool</name>
-	<deviceName>GroguArm</deviceName>
-	<type>udp-7dof-float</type>
-	<index>6</index>
-	<scale>1.0</scale>
-	<upperLimit>110.0</upperLimit>
-	<lowerLimit>-110.0</lowerLimit>
-	<upperVelocity>400.0</upperVelocity>
-	<lowerVelocity>-400.0</lowerVelocity>
-	<staticOffset>0.0</staticOffset>
-	<deviceTheoreticalMax>180.0</deviceTheoreticalMax>
-	<deviceTheoreticalMin>-180.0</deviceTheoreticalMin>
-	<isLatch>false</isLatch>
-	<indexLatch>0.0</indexLatch>
-	<isStopOnLatch>false</isStopOnLatch>
-	<homingTPS>10000000</homingTPS>
-
-	<vitamins>
-		<vitamin>
-			<name>electroMechanical</name>
-			<type>hobbyServo</type>
-			<id>standardMicro</id>
-		</vitamin>
-		<vitamin>
-			<name>shaft</name>
-			<type>hobbyServoHorn</type>
-			<id>standardMicro1</id>
-		</vitamin>
-
-	</vitamins>
-	<passive>false</passive>
-	<mass>0.0</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
-
-	<DHParameters>
-		<Delta>9.0</Delta>
-		<Theta>0.0</Theta>
-		<Radius>0.0</Radius>
-		<Alpha>0.0</Alpha>
-	</DHParameters>
-
-</link>
-
-<ZframeToRAS
->	<x>193.12110668703755</x>
-	<y>-50.28582707429301</y>
-	<z>94.52538591464563</z>
-	<rotw>0.5866506629463664</rotw>
-	<rotx>0.5255658907319648</rotx>
-	<roty>0.4065463660103399</roty>
-	<rotz>0.4629703515858139</rotz>
-</ZframeToRAS>
-
-<baseToZframe>
-	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>0.0</rotx>
-	<roty>0.0</roty>
-	<rotz>0.0</rotz>
-</baseToZframe>
-
-</appendage>
-
-<ZframeToRAS>
-	<x>193.12110668703755</x>
-	<y>-50.28582707429301</y>
-	<z>94.52538591464563</z>
-	<rotw>0.5866506629463664</rotw>
-	<rotx>0.5255658907319648</rotx>
-	<roty>0.4065463660103399</roty>
-	<rotz>0.4629703515858139</rotz>
-</ZframeToRAS>
-
-<baseToZframe>
-	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz>
-</baseToZframe>
-	<mass>0.5</mass>
-	<centerOfMassFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></centerOfMassFromCentroid>
-	<imuFromCentroid>	<x>0.0</x>
-	<y>0.0</y>
-	<z>0.0</z>
-	<rotw>1.0</rotw>
-	<rotx>-0.0</rotx>
-	<roty>-0.0</roty>
-	<rotz>-0.0</rotz></imuFromCentroid>
-
-<vitamins>
-
-</vitamins>
-
-</mobilebase>
-
 	</DHParameters>
 
 </link>

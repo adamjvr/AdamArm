@@ -265,7 +265,7 @@ return new ICadGenerator(){
 	
 		if(linkIndex==2) {
 			allCad.addAll(ScriptingEngine.gitScriptRun(
-			"https://github.com/Halloween2020TheChild/GroguMechanicsCad.git", // git location of the library
+			"https://github.com/adamjvr/AdamArm.git", // git location of the library
 			"link3.groovy" , // file to load
 			// Parameters passed to the funcetion
 			[d, linkIndex,centerTheMotorsValue,motorLocation]
@@ -273,7 +273,7 @@ return new ICadGenerator(){
 		}
 		if(linkIndex==3) {
 			allCad.addAll(ScriptingEngine.gitScriptRun(
-			"https://github.com/Halloween2020TheChild/GroguMechanicsCad.git", // git location of the library
+			"https://github.com/adamjvr/AdamArm.git", // git location of the library
 			"wrist1.groovy" , // file to load
 			// Parameters passed to the funcetion
 			[d, linkIndex,centerTheMotorsValue,motorLocation]
@@ -281,7 +281,7 @@ return new ICadGenerator(){
 		}
 		if(linkIndex==4) {
 			allCad.addAll(ScriptingEngine.gitScriptRun(
-			"https://github.com/Halloween2020TheChild/GroguMechanicsCad.git", // git location of the library
+			"https://github.com/adamjvr/AdamArm.git", // git location of the library
 			"wrist2.groovy" , // file to load
 			// Parameters passed to the funcetion
 			[d, linkIndex,centerTheMotorsValue,motorLocation]
@@ -289,13 +289,13 @@ return new ICadGenerator(){
 		}
 		if(linkIndex==5) {
 			allCad.addAll(ScriptingEngine.gitScriptRun(
-			"https://github.com/Halloween2020TheChild/GroguMechanicsCad.git", // git location of the library
+			"https://github.com/adamjvr/AdamArm.git", // git location of the library
 			"wrist3.groovy" , // file to load
 			// Parameters passed to the funcetion
 			[d, linkIndex,centerTheMotorsValue,motorLocation]
 			))
 			allCad.addAll(ScriptingEngine.gitScriptRun(
-				"https://github.com/Halloween2020TheChild/GroguMechanicsCad.git", // git location of the library
+				"https://github.com/adamjvr/AdamArm.git", // git location of the library
 				"tool.groovy" , // file to load
 				// Parameters passed to the funcetion
 				[d, linkIndex,centerTheMotorsValue,motorLocation]
@@ -816,7 +816,7 @@ return new ICadGenerator(){
 										.movez(hornKeepawayLen)
 										.transformed(calibrationFrame)
 										.difference(ScriptingEngine.gitScriptRun(
-			"https://github.com/Halloween2020TheChild/GroguMechanicsCad.git", // git location of the library
+			"https://github.com/adamjvr/AdamArm.git", // git location of the library
 			"wrist3.groovy" , // file to load
 			// Parameters passed to the funcetion
 			null
